@@ -1,0 +1,15 @@
+current directory: /home/dian/Documentos/Proyect/Ruby/DevcampPortfolio/vendedor/gems/websocket-driver-0.7.0/ext/websocket-driver
+/home/dian/.rvm/rubies/ruby-2.5.0/bin/ruby -I /home/dian/.rvm/rubies/ruby-2.5.0/lib/ruby/site_ruby/2.5.0 -r ./siteconf20190607-19494-ajpb85.rb extconf.rb
+creating Makefile
+
+current directory: /home/dian/Documentos/Proyect/Ruby/DevcampPortfolio/vendedor/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /home/dian/Documentos/Proyect/Ruby/DevcampPortfolio/vendedor/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/dian/Documentos/Proyect/Ruby/DevcampPortfolio/vendedor/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20190607-19494-rtohdw
