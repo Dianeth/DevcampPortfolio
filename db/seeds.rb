@@ -1,7 +1,43 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+10.times do |blog|
+	Blog.create!(
+		title:"My Blog Post #{blog}",
+		body: "Send up perps  2ñoiuhygt uyty
+			   doejor joeijfoiejoifj eiojriojerioj
+			   jhgghj kjuhytg hkijuh kijuhygt kuhy
+			   jeorjo jroreoroi wertyuiopñl kjhgfcvb
+			   ñiuyt rszxcvh jklñoi uytres xcvbghj
+			   poiuytre wq234567890pl,kmnbvcx edrty
+			   ouytrdhjklñ. csertyuio'0987543wsd 
+			   etyuijhgfdwapo  ijhytfgyu kjuhygf"
+		)
+end
+
+puts "10 blog posts created"
+
+5.times do |skill|
+	Skill.create!(
+		title:"Rails #{skill}",
+		percent_utilized: 15
+		)
+end
+
+puts "5 skill created"
+
+9.times do |portfolio_item|
+	Portfolio.create!(
+		title:"Portfolio title #{portfolio_item}",
+		subtitle:"My great service",
+		body:"Send up perps  2ñoiuhygt uyty
+			   doejor joeijfoiejoifj eiojriojerioj
+			   jhgghj kjuhytg hkijuh kijuhygt kuhy
+			   jeorjo jroreoroi wertyuiopñl kjhgfcvb
+			   ñiuyt rszxcvh jklñoi uytres xcvbghj
+			   poiuytre wq234567890pl,kmnbvcx edrty
+			   ouytrdhjklñ. csertyuio'0987543wsd 
+			   etyuijhgfdwapo  ijhytfgyu kjuhygf",
+		main_image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP0EP39WNrRjFyJo1qbAM-N_BYbPolRP-UdTxWfR2pg1Zpb8om",
+		thumb_image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP0EP39WNrRjFyJo1qbAM-N_BYbPolRP-UdTxWfR2pg1Zpb8om",
+		)
+end
+
+puts "9 porfolio items created"
