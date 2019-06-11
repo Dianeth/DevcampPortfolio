@@ -20,7 +20,7 @@ class PortfoliosController < ApplicationController
          format.html { render :new }
        end
       end
-    end
+  end
 
     def edit
     	@portfolio_items = Portfolio.find(params[:id])
@@ -40,7 +40,7 @@ class PortfoliosController < ApplicationController
     end
 
     def show
-    	@portfolio_items = Portfolio.find(params[:id])
+    	 @portfolio_items = Portfolio.find(params[:id])
     end
 
     def destroy
@@ -49,7 +49,7 @@ class PortfoliosController < ApplicationController
       @portfolio_items.destroy
 
     respond_to do |format|
-      format.html { redirect_to portfolio_url, notice: 'Record was remuve.' }
+      format.html { redirect_to portfolio_path, notice: 'Record was remuve.' }
       format.json { head :no_content }
     end
   end
