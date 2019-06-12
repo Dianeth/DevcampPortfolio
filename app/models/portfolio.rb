@@ -1,4 +1,5 @@
 class Portfolio < ApplicationRecord
+	include Placeholder
 	validates_presence_of :title, :body, :main_image, :thumb_image
 
 	def self.angular
@@ -7,10 +8,8 @@ class Portfolio < ApplicationRecord
 
 	scope :ruby_on_rails_portfolio_items, ->{where(subtitle: 'Ruby on Rails')}
 
-	after_initialize :set_defaults
-
 	def set_defaults
-		self.main_image ||= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP0EP39WNrRjFyJo1qbAM-N_BYbPolRP-UdTxWfR2pg1Zpb8om"
-		self.thumb_image ||= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP0EP39WNrRjFyJo1qbAM-N_BYbPolRP-UdTxWfR2pg1Zpb8om"
+		self.main_image ||= Placeholder.image_generator(height:'600', width: '350')
+		self.thumb_image ||= Placeholder.image_generator(height:'250', width: '250')
 	end
 end
